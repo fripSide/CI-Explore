@@ -1,5 +1,5 @@
 language: bash
-
+dist: bionic
 sudo: required
 
 script:
