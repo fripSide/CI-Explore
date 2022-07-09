@@ -3,5 +3,8 @@ language: bash
 sudo: required
 
 script:
+    - id
+    - cat /proc/version
+    - cat /etc/issue 
     - chmod u+x bpf.sh
     - bash bpf.sh
