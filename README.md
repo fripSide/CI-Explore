@@ -1,7 +1,7 @@
 
 ### 
 1. Travis CI
-- VM:
+- VM: success
 - Container:
 
 2. Github CI
