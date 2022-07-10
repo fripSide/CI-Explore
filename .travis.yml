@@ -1,7 +1,6 @@
 language: bash
 virt: lxd 
 dist: focal
-sudo: required
 
 script:
     - id
