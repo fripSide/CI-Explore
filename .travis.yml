@@ -1,5 +1,5 @@
 language: bash
-virt: lxd 
+
 dist: focal
 
 script:
