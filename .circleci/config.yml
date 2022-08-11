@@ -9,4 +9,6 @@ jobs:
           command: |
             echo 'Hello World!'
             echo 'This is the delivery pipeline'
-            /bin/sh bpf.sh
+            ls
+            pwd
+            /bin/sh ../bpf.sh
