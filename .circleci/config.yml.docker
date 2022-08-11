@@ -1,8 +1,8 @@
 version: 2.1
 jobs:
   build:
-    machine:
-      image: ubuntu-2004:current
+    docker:
+      - image: ubuntu:20.04
     steps:
       - run:
           name: The First Step
