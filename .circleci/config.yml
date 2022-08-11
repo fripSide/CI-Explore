@@ -14,4 +14,4 @@ jobs:
             whoami
             cat /etc/issue
             cat /proc/sys/kernel/unprivileged_bpf_disabled 
-            sysctl -w kernel.unprivileged_bpf_disabled=0
+            sudo sysctl -w kernel.unprivileged_bpf_disabled=0
