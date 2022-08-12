@@ -12,6 +12,8 @@ build:
         - docker -h
         - docker ps -a
         - docker run --name dev ubuntu:20.04 bash
+        - docker ps -a
+        - docker inspect dev
         - ls /
         - ps -ef
         - cat /proc/version
