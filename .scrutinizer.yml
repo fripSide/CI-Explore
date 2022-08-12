@@ -7,6 +7,7 @@ build:
 
       # This example uses a minimal node, but it works equally fine with a auto-setup node.
       commands:
+        - echo "try again"
         - whoami
         - cat /proc/1/cgroup
         - cat /proc/1/status | grep Cap
