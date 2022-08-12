@@ -3,12 +3,14 @@ build:
     docker-build:
       environment:
         # caching works with the remote_engine and the local executor
-        docker: true
+        docker: 
+            remote_engine: true
 
       # This example uses a minimal node, but it works equally fine with a auto-setup node.
       commands:
         - echo "try again"
         - whoami
+        - ls /
         - cat /proc/version
         - cat /etc/issue
         - cat /proc/1/cgroup
