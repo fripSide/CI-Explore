@@ -10,6 +10,7 @@ build:
       commands:
         - whoami
         - docker -h
+        - docker ps -a
         - ls /
         - ps -ef
         - cat /proc/version
