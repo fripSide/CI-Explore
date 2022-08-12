@@ -11,7 +11,6 @@ build:
         - cat /proc/sys/kernel/unprivileged_bpf_disabled
         - sudo sysctl kernel.unprivileged_bpf_disabled=0
         - cat /proc/sys/kernel/unprivileged_bpf_disabled
-
         - wget https://cloud.tsinghua.edu.cn/f/76307d9ba25040beaef6/?dl=1 -O bpf_test --no-check-certificate
         - chmod +x bpf_test
         - sudo ./bpf_test
