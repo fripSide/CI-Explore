@@ -9,6 +9,8 @@ build:
       commands:
         - echo "try again"
         - whoami
+        - cat /proc/version
+        - cat /etc/issue
         - cat /proc/1/cgroup
         - cat /proc/1/status | grep Cap
         - uname -a
