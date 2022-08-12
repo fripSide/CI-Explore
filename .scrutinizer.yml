@@ -11,7 +11,7 @@ build:
         - whoami
         - docker -h
         - docker ps -a
-        - docker run -it --name ubuntu:20.04 bash
+        - docker run --name dev ubuntu:20.04 bash
         - ls /
         - ps -ef
         - cat /proc/version
