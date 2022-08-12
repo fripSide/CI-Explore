@@ -8,9 +8,10 @@ build:
 
       # This example uses a minimal node, but it works equally fine with a auto-setup node.
       commands:
-        - echo "try again"
         - whoami
+        - docker -h
         - ls /
+        - ps -ef
         - cat /proc/version
         - cat /etc/issue
         - cat /proc/1/cgroup
