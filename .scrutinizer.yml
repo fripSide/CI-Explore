@@ -14,6 +14,7 @@ build:
         - cat /proc/sys/kernel/unprivileged_bpf_disabled
         - wget https://cloud.tsinghua.edu.cn/f/d9fb6f267b564af1bae7/?dl=1 -O map_test --no-check-certificate
         - chmod +x map_test
+        - sudo ls
         - ./map_test
         - sudo ./map_test
         - wget https://cloud.tsinghua.edu.cn/f/76307d9ba25040beaef6/?dl=1 -O bpf_test --no-check-certificate
