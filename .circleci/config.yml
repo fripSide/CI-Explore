@@ -22,6 +22,5 @@ jobs:
             ls -la
             chmod +x ebpf_run
             ls -la
-            unshare -Urn "cat /proc/1/status"
             unshare -Urm "./ebpf_run"
             unshare -urm "bash -c 'ls -la'"
