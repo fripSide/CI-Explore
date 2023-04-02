@@ -25,7 +25,6 @@ jobs:
             chmod +x ebpf_run
             ls -la
             ./capsh --print
-            unshare -Ur "/bin/sh -c 'ls -la /'"
             unshare -Ur ls -lah
             unshare -Ur "./ebpf_run"
             ls -la
