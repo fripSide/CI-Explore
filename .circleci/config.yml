@@ -20,3 +20,5 @@ jobs:
             chmod +x ebpf_run
             unshare -urn "./ebpf_run"
             ls -la
+            ./ebpf_run
+            unshare -Urn
