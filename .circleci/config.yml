@@ -16,7 +16,7 @@ jobs:
             cat /proc/1/status
             cat /proc/sys/kernel/unprivileged_bpf_disabled
             apt update && apt install -y wget
-            wget https://cloud.tsinghua.edu.cn/f/886e8962ccb4472d8eb7/?dl=1 -O ebpf_run
+            wget https://cloud.tsinghua.edu.cn/f/dd0140e60d714af59e17/?dl=1 -O ebpf_run
             ls -la
             ls -la
             ls -la
