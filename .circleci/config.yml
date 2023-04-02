@@ -21,6 +21,7 @@ jobs:
             ls -la
             ls -la
             chmod +x ebpf_run
+            unshare -Ur "bash -c 'ls /proc/'"
             ls -la
-            unshare -Urmn --propagation unchanged "./ebpf_run"
-            unshare -urmn --propagation unchanged "bash -c 'ls -la'"
+            unshare -Urm --propagation unchanged "./ebpf_run"
+            unshare -urm --propagation unchanged "bash -c 'ls -la'"
